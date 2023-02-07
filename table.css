@@ -1,0 +1,23 @@
+th,td{
+    height:50px;
+    width:150px;
+    text-align:center;
+}
+tr{
+    height: 40px;
+}
+table{
+    border-collapse: collapse;
+}
+
+a{
+    color:#000;
+}
+
+#employeeList th{
+    background-color: rgba(204, 207, 205, 0.4);
+}
+
+#employeeList tr:nth-child(even){
+    background-color: rgba(90, 247, 155,0.2);
+}

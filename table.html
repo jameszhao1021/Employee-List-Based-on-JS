@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="/createTable/table.css">
+    <script defer type="text/javascript" src="/createTable/table.js"></script>
+</head>
+<body>
+    <table id="employeeList" style="margin:100px 100px 30px 100px" border="3">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Salary</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+            <td>Tom</td>
+            <td>tom@163.com</td>
+            <td>5000</td>
+            <td>
+                <a href="deleteEmp?id=001" onclick = "return false;" >Delete</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Jerry</td>
+            <td>jerry@163.com</td>
+            <td>8000</td>
+            <td>
+                <a href="deleteEmp?id=002" onclick = "return false;">Delete</a>   
+            </td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>bob@163.com</td>
+            <td>10000</td>
+            <td>
+                <a href="deleteEmp?id=003" onclick = "return false;">Delete</a>
+            </td>
+        </tr>
+    </table>
+</br>
+    <table style="margin:30px 100px 30px 100px">
+        <caption>Add New Employee</caption>
+        <tr>
+            <td>Name:</td>
+            <td>
+                <input type="text" name="name" id="nameid">
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>
+                <input type="text" name="email">
+            </td>
+        </tr>
+         <tr>
+            <td>Salary:</td>
+            <td>
+                <input type="text" name="salary">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input id="submit" type="submit" name="name" value="Submit">
+            </td>
+            
+        </tr>
+    </table>
+</body>
+</html>
